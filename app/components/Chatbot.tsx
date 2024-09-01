@@ -23,7 +23,7 @@ const Chatbot: React.FC = () => {
 
             try {
                 //sending the image to server to check/analyzed
-                const res = await axios.post('http://localhost:3000/api/analyze-image', { image: reader.result })
+                const res = await axios.post('../api/analyze-image', { image: reader.result })
                 setResponse(res.data.message); // updating the response state with the server's messsage
             } catch (error) {
                 console.error(error);
