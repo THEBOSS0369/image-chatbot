@@ -34,7 +34,7 @@ export default function Home() {
     };
 
     const handleSendMessage = () => {
-        const botResponse = `You asked about ${response}.`;
+        const botResponse = `This Image has ${response}.`;
         setChat([...chat, { user: userMessage, bot: botResponse }]);
         setUserMessage('');
     };
@@ -44,7 +44,6 @@ export default function Home() {
             <h1 style={styles.heading}>Conversational Image Chatbot</h1>
             <input type="file" onChange={handleImageUpload} style={styles.fileInput} />
             {imageUrl && <img src={imageUrl} alt="Uploaded" style={styles.image} />}
-            {response && <p style={styles.response}>Image Analysis Result: {response}</p>}
 
             <div style={styles.chatContainer}>
                 <input
