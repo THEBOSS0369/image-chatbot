@@ -59,7 +59,7 @@ export default function Home() {
             <h1 className='text-2xl font-bold' style={styles.heading}>CONVERSATIONAL IMAGE CHATBOT</h1>
             <input type="file" onChange={handleImageUpload} style={styles.fileInput} />
             {imageUrl && <img src={imageUrl} alt="Uploaded" style={styles.image} />}
-            {response && <p style={styles.response}>Image Analysis Result: {response}</p>}
+            {response && <p style={styles.response}>Image Analysis Done</p>}
 
             <div style={styles.chatContainer}>
                 <input
